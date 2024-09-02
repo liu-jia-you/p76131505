@@ -1,0 +1,632 @@
+wvSetPosition -win $_nWave1 {("G1" 0)}
+wvOpenFile -win $_nWave1 {/home/liujiayou/p76131505_3/build/top.fsdb}
+wvSelectGroup -win $_nWave1 {G1}
+wvRenameGroup -win $_nWave1 {G1} {p_c}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/top_tb"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu/pgc"
+wvSetPosition -win $_nWave1 {("p_c" 5)}
+wvSetPosition -win $_nWave1 {("p_c" 5)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"p_c" \
+{/top_tb/TOP/cpu/pgc/clk} \
+{/top_tb/TOP/cpu/pgc/pc_in\[31:0\]} \
+{/top_tb/TOP/cpu/pgc/pc_out\[31:0\]} \
+{/top_tb/TOP/cpu/pgc/pc_write} \
+{/top_tb/TOP/cpu/pgc/rst} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "p_c" 1 2 3 4 5 )} 
+wvSetPosition -win $_nWave1 {("p_c" 5)}
+wvSetPosition -win $_nWave1 {("p_c" 5)}
+wvSetPosition -win $_nWave1 {("p_c" 5)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"p_c" \
+{/top_tb/TOP/cpu/pgc/clk} \
+{/top_tb/TOP/cpu/pgc/pc_in\[31:0\]} \
+{/top_tb/TOP/cpu/pgc/pc_out\[31:0\]} \
+{/top_tb/TOP/cpu/pgc/pc_write} \
+{/top_tb/TOP/cpu/pgc/rst} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "p_c" 1 2 3 4 5 )} 
+wvSetPosition -win $_nWave1 {("p_c" 5)}
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "p_c" 5 )} 
+wvSetPosition -win $_nWave1 {("p_c" 4)}
+wvSetPosition -win $_nWave1 {("p_c" 3)}
+wvSetPosition -win $_nWave1 {("p_c" 2)}
+wvSetPosition -win $_nWave1 {("p_c" 1)}
+wvMoveSelected -win $_nWave1
+wvSetPosition -win $_nWave1 {("p_c" 1)}
+wvSetPosition -win $_nWave1 {("p_c" 2)}
+wvSelectGroup -win $_nWave1 {G2}
+wvSetCursor -win $_nWave1 2571933.085502 -snap {("G2" 0)}
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvRenameGroup -win $_nWave1 {G2} {pc_in_mux}
+wvSelectGroup -win $_nWave1 {pc_in_mux}
+wvSetPosition -win $_nWave1 {("pc_in_mux" 0)}
+wvMoveSelected -win $_nWave1
+wvSelectGroup -win $_nWave1 {pc_in_mux}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/top_tb"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu/pgc"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu/pc_m"
+wvSetPosition -win $_nWave1 {("pc_in_mux" 6)}
+wvSetPosition -win $_nWave1 {("pc_in_mux" 6)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"p_c" \
+{/top_tb/TOP/cpu/pgc/clk} \
+{/top_tb/TOP/cpu/pgc/rst} \
+{/top_tb/TOP/cpu/pgc/pc_in\[31:0\]} \
+{/top_tb/TOP/cpu/pgc/pc_out\[31:0\]} \
+{/top_tb/TOP/cpu/pgc/pc_write} \
+}
+wvAddSignal -win $_nWave1 -group {"pc_in_mux" \
+{/top_tb/TOP/cpu/pc_m/branch_ctrl\[1:0\]} \
+{/top_tb/TOP/cpu/pc_m/pc_4\[31:0\]} \
+{/top_tb/TOP/cpu/pc_m/pc_imm\[31:0\]} \
+{/top_tb/TOP/cpu/pc_m/pc_imm_rs1\[31:0\]} \
+{/top_tb/TOP/cpu/pc_m/pc_in\[31:0\]} \
+{/top_tb/TOP/cpu/pc_m/pc_out\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+}
+wvSelectSignal -win $_nWave1 {( "pc_in_mux" 1 2 3 4 5 6 )} 
+wvSetPosition -win $_nWave1 {("pc_in_mux" 6)}
+wvSetPosition -win $_nWave1 {("pc_in_mux" 6)}
+wvSetPosition -win $_nWave1 {("pc_in_mux" 6)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"p_c" \
+{/top_tb/TOP/cpu/pgc/clk} \
+{/top_tb/TOP/cpu/pgc/rst} \
+{/top_tb/TOP/cpu/pgc/pc_in\[31:0\]} \
+{/top_tb/TOP/cpu/pgc/pc_out\[31:0\]} \
+{/top_tb/TOP/cpu/pgc/pc_write} \
+}
+wvAddSignal -win $_nWave1 -group {"pc_in_mux" \
+{/top_tb/TOP/cpu/pc_m/branch_ctrl\[1:0\]} \
+{/top_tb/TOP/cpu/pc_m/pc_4\[31:0\]} \
+{/top_tb/TOP/cpu/pc_m/pc_imm\[31:0\]} \
+{/top_tb/TOP/cpu/pc_m/pc_imm_rs1\[31:0\]} \
+{/top_tb/TOP/cpu/pc_m/pc_in\[31:0\]} \
+{/top_tb/TOP/cpu/pc_m/pc_out\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+}
+wvSelectSignal -win $_nWave1 {( "pc_in_mux" 1 2 3 4 5 6 )} 
+wvSetPosition -win $_nWave1 {("pc_in_mux" 6)}
+wvGetSignalClose -win $_nWave1
+wvSelectGroup -win $_nWave1 {G3}
+wvSetCursor -win $_nWave1 3153.316682 -snap {("G3" 0)}
+wvSelectGroup -win $_nWave1 {G3}
+wvRenameGroup -win $_nWave1 {G3} {instr_m}
+wvSetPosition -win $_nWave1 {("instr_m" 0)}
+wvMoveSelected -win $_nWave1
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/top_tb"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu/pgc"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu/pc_m"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu/istr_m"
+wvSetPosition -win $_nWave1 {("instr_m" 3)}
+wvSetPosition -win $_nWave1 {("instr_m" 3)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"p_c" \
+{/top_tb/TOP/cpu/pgc/clk} \
+{/top_tb/TOP/cpu/pgc/rst} \
+{/top_tb/TOP/cpu/pgc/pc_in\[31:0\]} \
+{/top_tb/TOP/cpu/pgc/pc_out\[31:0\]} \
+{/top_tb/TOP/cpu/pgc/pc_write} \
+}
+wvAddSignal -win $_nWave1 -group {"pc_in_mux" \
+{/top_tb/TOP/cpu/pc_m/branch_ctrl\[1:0\]} \
+{/top_tb/TOP/cpu/pc_m/pc_4\[31:0\]} \
+{/top_tb/TOP/cpu/pc_m/pc_imm\[31:0\]} \
+{/top_tb/TOP/cpu/pc_m/pc_imm_rs1\[31:0\]} \
+{/top_tb/TOP/cpu/pc_m/pc_in\[31:0\]} \
+{/top_tb/TOP/cpu/pc_m/pc_out\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"instr_m" \
+{/top_tb/TOP/cpu/istr_m/instr\[31:0\]} \
+{/top_tb/TOP/cpu/istr_m/instr_flush} \
+{/top_tb/TOP/cpu/istr_m/instr_out\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G4" \
+}
+wvSelectSignal -win $_nWave1 {( "instr_m" 1 2 3 )} 
+wvSetPosition -win $_nWave1 {("instr_m" 3)}
+wvSetPosition -win $_nWave1 {("instr_m" 3)}
+wvSetPosition -win $_nWave1 {("instr_m" 3)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"p_c" \
+{/top_tb/TOP/cpu/pgc/clk} \
+{/top_tb/TOP/cpu/pgc/rst} \
+{/top_tb/TOP/cpu/pgc/pc_in\[31:0\]} \
+{/top_tb/TOP/cpu/pgc/pc_out\[31:0\]} \
+{/top_tb/TOP/cpu/pgc/pc_write} \
+}
+wvAddSignal -win $_nWave1 -group {"pc_in_mux" \
+{/top_tb/TOP/cpu/pc_m/branch_ctrl\[1:0\]} \
+{/top_tb/TOP/cpu/pc_m/pc_4\[31:0\]} \
+{/top_tb/TOP/cpu/pc_m/pc_imm\[31:0\]} \
+{/top_tb/TOP/cpu/pc_m/pc_imm_rs1\[31:0\]} \
+{/top_tb/TOP/cpu/pc_m/pc_in\[31:0\]} \
+{/top_tb/TOP/cpu/pc_m/pc_out\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"instr_m" \
+{/top_tb/TOP/cpu/istr_m/instr\[31:0\]} \
+{/top_tb/TOP/cpu/istr_m/instr_flush} \
+{/top_tb/TOP/cpu/istr_m/instr_out\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G4" \
+}
+wvSelectSignal -win $_nWave1 {( "instr_m" 1 2 3 )} 
+wvSetPosition -win $_nWave1 {("instr_m" 3)}
+wvGetSignalClose -win $_nWave1
+wvSelectGroup -win $_nWave1 {G4}
+wvSelectGroup -win $_nWave1 {G4}
+wvRenameGroup -win $_nWave1 {G4} {if_id}
+wvSetPosition -win $_nWave1 {("if_id" 0)}
+wvMoveSelected -win $_nWave1
+wvSelectGroup -win $_nWave1 {if_id}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/top_tb"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu/pc_m"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu/pgc"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu/istr_m"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu/if_id"
+wvSetPosition -win $_nWave1 {("if_id" 7)}
+wvSetPosition -win $_nWave1 {("if_id" 7)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"p_c" \
+{/top_tb/TOP/cpu/pgc/clk} \
+{/top_tb/TOP/cpu/pgc/rst} \
+{/top_tb/TOP/cpu/pgc/pc_in\[31:0\]} \
+{/top_tb/TOP/cpu/pgc/pc_out\[31:0\]} \
+{/top_tb/TOP/cpu/pgc/pc_write} \
+}
+wvAddSignal -win $_nWave1 -group {"pc_in_mux" \
+{/top_tb/TOP/cpu/pc_m/branch_ctrl\[1:0\]} \
+{/top_tb/TOP/cpu/pc_m/pc_4\[31:0\]} \
+{/top_tb/TOP/cpu/pc_m/pc_imm\[31:0\]} \
+{/top_tb/TOP/cpu/pc_m/pc_imm_rs1\[31:0\]} \
+{/top_tb/TOP/cpu/pc_m/pc_in\[31:0\]} \
+{/top_tb/TOP/cpu/pc_m/pc_out\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"instr_m" \
+{/top_tb/TOP/cpu/istr_m/instr\[31:0\]} \
+{/top_tb/TOP/cpu/istr_m/instr_flush} \
+{/top_tb/TOP/cpu/istr_m/instr_out\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"if_id" \
+{/top_tb/TOP/cpu/if_id/clk} \
+{/top_tb/TOP/cpu/if_id/id_instr\[31:0\]} \
+{/top_tb/TOP/cpu/if_id/id_pc\[31:0\]} \
+{/top_tb/TOP/cpu/if_id/if_id_reg_write} \
+{/top_tb/TOP/cpu/if_id/if_instr\[31:0\]} \
+{/top_tb/TOP/cpu/if_id/if_pc\[31:0\]} \
+{/top_tb/TOP/cpu/if_id/rst} \
+}
+wvAddSignal -win $_nWave1 -group {"G5" \
+}
+wvSelectSignal -win $_nWave1 {( "if_id" 1 2 3 4 5 6 7 )} 
+wvSetPosition -win $_nWave1 {("if_id" 7)}
+wvSetPosition -win $_nWave1 {("if_id" 7)}
+wvSetPosition -win $_nWave1 {("if_id" 7)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"p_c" \
+{/top_tb/TOP/cpu/pgc/clk} \
+{/top_tb/TOP/cpu/pgc/rst} \
+{/top_tb/TOP/cpu/pgc/pc_in\[31:0\]} \
+{/top_tb/TOP/cpu/pgc/pc_out\[31:0\]} \
+{/top_tb/TOP/cpu/pgc/pc_write} \
+}
+wvAddSignal -win $_nWave1 -group {"pc_in_mux" \
+{/top_tb/TOP/cpu/pc_m/branch_ctrl\[1:0\]} \
+{/top_tb/TOP/cpu/pc_m/pc_4\[31:0\]} \
+{/top_tb/TOP/cpu/pc_m/pc_imm\[31:0\]} \
+{/top_tb/TOP/cpu/pc_m/pc_imm_rs1\[31:0\]} \
+{/top_tb/TOP/cpu/pc_m/pc_in\[31:0\]} \
+{/top_tb/TOP/cpu/pc_m/pc_out\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"instr_m" \
+{/top_tb/TOP/cpu/istr_m/instr\[31:0\]} \
+{/top_tb/TOP/cpu/istr_m/instr_flush} \
+{/top_tb/TOP/cpu/istr_m/instr_out\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"if_id" \
+{/top_tb/TOP/cpu/if_id/clk} \
+{/top_tb/TOP/cpu/if_id/id_instr\[31:0\]} \
+{/top_tb/TOP/cpu/if_id/id_pc\[31:0\]} \
+{/top_tb/TOP/cpu/if_id/if_id_reg_write} \
+{/top_tb/TOP/cpu/if_id/if_instr\[31:0\]} \
+{/top_tb/TOP/cpu/if_id/if_pc\[31:0\]} \
+{/top_tb/TOP/cpu/if_id/rst} \
+}
+wvAddSignal -win $_nWave1 -group {"G5" \
+}
+wvSelectSignal -win $_nWave1 {( "if_id" 1 2 3 4 5 6 7 )} 
+wvSetPosition -win $_nWave1 {("if_id" 7)}
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "if_id" 1 )} 
+wvCut -win $_nWave1
+wvSetPosition -win $_nWave1 {("G5" 0)}
+wvSetPosition -win $_nWave1 {("if_id" 6)}
+wvSelectSignal -win $_nWave1 {( "if_id" 6 )} 
+wvCut -win $_nWave1
+wvSetPosition -win $_nWave1 {("G5" 0)}
+wvSetPosition -win $_nWave1 {("if_id" 5)}
+wvSelectGroup -win $_nWave1 {G5}
+wvSetCursor -win $_nWave1 5976.635107 -snap {("G5" 0)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSetCursor -win $_nWave1 1393.325976 -snap {("if_id" 5)}
+wvSetCursor -win $_nWave1 9166.618262 -snap {("G5" 0)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSelectGroup -win $_nWave1 {G5}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvResizeWindow -win $_nWave1 1 31 798 821
+wvSetCursor -win $_nWave1 8396.622328 -snap {("G5" 0)}
+wvSelectGroup -win $_nWave1 {G5}
+wvSelectGroup -win $_nWave1 {G5}
+wvSetCursor -win $_nWave1 7736.625813 -snap {("G5" 0)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSetCursor -win $_nWave1 9973.280669 -snap {("G5" 0)}
+wvResizeWindow -win $_nWave1 801 31 798 828
+wvSetCursor -win $_nWave1 12576.600256 -snap {("G5" 0)}
+wvSetCursor -win $_nWave1 11403.273118 -snap {("G5" 0)}
+wvSetCursor -win $_nWave1 6086.634526 -snap {("G5" 0)}
+wvSetCursor -win $_nWave1 6893.296933 -snap {("G5" 0)}
+wvSelectGroup -win $_nWave1 {G5}
+wvRenameGroup -win $_nWave1 {G5} {id_exe}
+wvSelectGroup -win $_nWave1 {id_exe}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu/id_exe"
+wvSetPosition -win $_nWave1 {("id_exe" 7)}
+wvSetPosition -win $_nWave1 {("id_exe" 7)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"p_c" \
+{/top_tb/TOP/cpu/pgc/clk} \
+{/top_tb/TOP/cpu/pgc/rst} \
+{/top_tb/TOP/cpu/pgc/pc_in\[31:0\]} \
+{/top_tb/TOP/cpu/pgc/pc_out\[31:0\]} \
+{/top_tb/TOP/cpu/pgc/pc_write} \
+}
+wvAddSignal -win $_nWave1 -group {"pc_in_mux" \
+{/top_tb/TOP/cpu/pc_m/branch_ctrl\[1:0\]} \
+{/top_tb/TOP/cpu/pc_m/pc_imm\[31:0\]} \
+{/top_tb/TOP/cpu/pc_m/pc_imm_rs1\[31:0\]} \
+{/top_tb/TOP/cpu/pc_m/pc_in\[31:0\]} \
+{/top_tb/TOP/cpu/pc_m/pc_out\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"instr_m" \
+{/top_tb/TOP/cpu/istr_m/instr\[31:0\]} \
+{/top_tb/TOP/cpu/istr_m/instr_flush} \
+{/top_tb/TOP/cpu/istr_m/instr_out\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"if_id" \
+{/top_tb/TOP/cpu/if_id/id_instr\[31:0\]} \
+{/top_tb/TOP/cpu/if_id/id_pc\[31:0\]} \
+{/top_tb/TOP/cpu/if_id/if_id_reg_write} \
+{/top_tb/TOP/cpu/if_id/if_instr\[31:0\]} \
+{/top_tb/TOP/cpu/if_id/if_pc\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"id_exe" \
+{/top_tb/TOP/cpu/id_exe/exe_funct3\[2:0\]} \
+{/top_tb/TOP/cpu/id_exe/exe_funct7\[6:0\]} \
+{/top_tb/TOP/cpu/id_exe/exe_imm\[31:0\]} \
+{/top_tb/TOP/cpu/id_exe/exe_rs1_addr\[4:0\]} \
+{/top_tb/TOP/cpu/id_exe/exe_rs1_data\[31:0\]} \
+{/top_tb/TOP/cpu/id_exe/exe_rs2_addr\[4:0\]} \
+{/top_tb/TOP/cpu/id_exe/exe_rs2_data\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G6" \
+}
+wvSelectSignal -win $_nWave1 {( "id_exe" 1 2 3 4 5 6 7 )} 
+wvSetPosition -win $_nWave1 {("id_exe" 7)}
+wvSetPosition -win $_nWave1 {("id_exe" 7)}
+wvSetPosition -win $_nWave1 {("id_exe" 7)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"p_c" \
+{/top_tb/TOP/cpu/pgc/clk} \
+{/top_tb/TOP/cpu/pgc/rst} \
+{/top_tb/TOP/cpu/pgc/pc_in\[31:0\]} \
+{/top_tb/TOP/cpu/pgc/pc_out\[31:0\]} \
+{/top_tb/TOP/cpu/pgc/pc_write} \
+}
+wvAddSignal -win $_nWave1 -group {"pc_in_mux" \
+{/top_tb/TOP/cpu/pc_m/branch_ctrl\[1:0\]} \
+{/top_tb/TOP/cpu/pc_m/pc_imm\[31:0\]} \
+{/top_tb/TOP/cpu/pc_m/pc_imm_rs1\[31:0\]} \
+{/top_tb/TOP/cpu/pc_m/pc_in\[31:0\]} \
+{/top_tb/TOP/cpu/pc_m/pc_out\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"instr_m" \
+{/top_tb/TOP/cpu/istr_m/instr\[31:0\]} \
+{/top_tb/TOP/cpu/istr_m/instr_flush} \
+{/top_tb/TOP/cpu/istr_m/instr_out\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"if_id" \
+{/top_tb/TOP/cpu/if_id/id_instr\[31:0\]} \
+{/top_tb/TOP/cpu/if_id/id_pc\[31:0\]} \
+{/top_tb/TOP/cpu/if_id/if_id_reg_write} \
+{/top_tb/TOP/cpu/if_id/if_instr\[31:0\]} \
+{/top_tb/TOP/cpu/if_id/if_pc\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"id_exe" \
+{/top_tb/TOP/cpu/id_exe/exe_funct3\[2:0\]} \
+{/top_tb/TOP/cpu/id_exe/exe_funct7\[6:0\]} \
+{/top_tb/TOP/cpu/id_exe/exe_imm\[31:0\]} \
+{/top_tb/TOP/cpu/id_exe/exe_rs1_addr\[4:0\]} \
+{/top_tb/TOP/cpu/id_exe/exe_rs1_data\[31:0\]} \
+{/top_tb/TOP/cpu/id_exe/exe_rs2_addr\[4:0\]} \
+{/top_tb/TOP/cpu/id_exe/exe_rs2_data\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G6" \
+}
+wvSelectSignal -win $_nWave1 {( "id_exe" 1 2 3 4 5 6 7 )} 
+wvSetPosition -win $_nWave1 {("id_exe" 7)}
+wvGetSignalClose -win $_nWave1
+wvSetCursor -win $_nWave1 4583.309131 -snap {("G6" 0)}
+wvSetCursor -win $_nWave1 34000.820458 -snap {("G6" 0)}
+wvSelectGroup -win $_nWave1 {G6}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/top_tb"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu/istr_m"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu/pc_m"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu/pgc"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu/id_exe"
+wvSetPosition -win $_nWave1 {("id_exe" 8)}
+wvSetPosition -win $_nWave1 {("id_exe" 8)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"p_c" \
+{/top_tb/TOP/cpu/pgc/clk} \
+{/top_tb/TOP/cpu/pgc/rst} \
+{/top_tb/TOP/cpu/pgc/pc_in\[31:0\]} \
+{/top_tb/TOP/cpu/pgc/pc_out\[31:0\]} \
+{/top_tb/TOP/cpu/pgc/pc_write} \
+}
+wvAddSignal -win $_nWave1 -group {"pc_in_mux" \
+{/top_tb/TOP/cpu/pc_m/branch_ctrl\[1:0\]} \
+{/top_tb/TOP/cpu/pc_m/pc_imm\[31:0\]} \
+{/top_tb/TOP/cpu/pc_m/pc_imm_rs1\[31:0\]} \
+{/top_tb/TOP/cpu/pc_m/pc_in\[31:0\]} \
+{/top_tb/TOP/cpu/pc_m/pc_out\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"instr_m" \
+{/top_tb/TOP/cpu/istr_m/instr\[31:0\]} \
+{/top_tb/TOP/cpu/istr_m/instr_flush} \
+{/top_tb/TOP/cpu/istr_m/instr_out\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"if_id" \
+{/top_tb/TOP/cpu/if_id/id_instr\[31:0\]} \
+{/top_tb/TOP/cpu/if_id/id_pc\[31:0\]} \
+{/top_tb/TOP/cpu/if_id/if_id_reg_write} \
+{/top_tb/TOP/cpu/if_id/if_instr\[31:0\]} \
+{/top_tb/TOP/cpu/if_id/if_pc\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"id_exe" \
+{/top_tb/TOP/cpu/id_exe/exe_funct3\[2:0\]} \
+{/top_tb/TOP/cpu/id_exe/exe_funct7\[6:0\]} \
+{/top_tb/TOP/cpu/id_exe/exe_imm\[31:0\]} \
+{/top_tb/TOP/cpu/id_exe/exe_rs1_addr\[4:0\]} \
+{/top_tb/TOP/cpu/id_exe/exe_rs1_data\[31:0\]} \
+{/top_tb/TOP/cpu/id_exe/exe_rs2_addr\[4:0\]} \
+{/top_tb/TOP/cpu/id_exe/exe_rs2_data\[31:0\]} \
+{/top_tb/TOP/cpu/id_exe/exe_rd_addr\[4:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G6" \
+}
+wvSelectSignal -win $_nWave1 {( "id_exe" 8 )} 
+wvSetPosition -win $_nWave1 {("id_exe" 8)}
+wvSetPosition -win $_nWave1 {("id_exe" 8)}
+wvSetPosition -win $_nWave1 {("id_exe" 8)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"p_c" \
+{/top_tb/TOP/cpu/pgc/clk} \
+{/top_tb/TOP/cpu/pgc/rst} \
+{/top_tb/TOP/cpu/pgc/pc_in\[31:0\]} \
+{/top_tb/TOP/cpu/pgc/pc_out\[31:0\]} \
+{/top_tb/TOP/cpu/pgc/pc_write} \
+}
+wvAddSignal -win $_nWave1 -group {"pc_in_mux" \
+{/top_tb/TOP/cpu/pc_m/branch_ctrl\[1:0\]} \
+{/top_tb/TOP/cpu/pc_m/pc_imm\[31:0\]} \
+{/top_tb/TOP/cpu/pc_m/pc_imm_rs1\[31:0\]} \
+{/top_tb/TOP/cpu/pc_m/pc_in\[31:0\]} \
+{/top_tb/TOP/cpu/pc_m/pc_out\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"instr_m" \
+{/top_tb/TOP/cpu/istr_m/instr\[31:0\]} \
+{/top_tb/TOP/cpu/istr_m/instr_flush} \
+{/top_tb/TOP/cpu/istr_m/instr_out\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"if_id" \
+{/top_tb/TOP/cpu/if_id/id_instr\[31:0\]} \
+{/top_tb/TOP/cpu/if_id/id_pc\[31:0\]} \
+{/top_tb/TOP/cpu/if_id/if_id_reg_write} \
+{/top_tb/TOP/cpu/if_id/if_instr\[31:0\]} \
+{/top_tb/TOP/cpu/if_id/if_pc\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"id_exe" \
+{/top_tb/TOP/cpu/id_exe/exe_funct3\[2:0\]} \
+{/top_tb/TOP/cpu/id_exe/exe_funct7\[6:0\]} \
+{/top_tb/TOP/cpu/id_exe/exe_imm\[31:0\]} \
+{/top_tb/TOP/cpu/id_exe/exe_rs1_addr\[4:0\]} \
+{/top_tb/TOP/cpu/id_exe/exe_rs1_data\[31:0\]} \
+{/top_tb/TOP/cpu/id_exe/exe_rs2_addr\[4:0\]} \
+{/top_tb/TOP/cpu/id_exe/exe_rs2_data\[31:0\]} \
+{/top_tb/TOP/cpu/id_exe/exe_rd_addr\[4:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G6" \
+}
+wvSelectSignal -win $_nWave1 {( "id_exe" 8 )} 
+wvSetPosition -win $_nWave1 {("id_exe" 8)}
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "id_exe" 4 )} 
+wvSelectSignal -win $_nWave1 {( "id_exe" 5 )} 
+wvSelectSignal -win $_nWave1 {( "id_exe" 6 )} 
+wvSelectSignal -win $_nWave1 {( "id_exe" 7 )} 
+wvSelectSignal -win $_nWave1 {( "id_exe" 4 )} 
+wvSelectGroup -win $_nWave1 {G6}
+wvSelectSignal -win $_nWave1 {( "id_exe" 3 )} 
+wvSetCursor -win $_nWave1 33568.156076 -snap {("id_exe" 3)}
+wvZoomIn -win $_nWave1
+wvSetCursor -win $_nWave1 38004.799315 -snap {("pc_in_mux" 1)}
+wvSelectSignal -win $_nWave1 {( "pc_in_mux" 2 )} 
+wvSelectSignal -win $_nWave1 {( "pc_in_mux" 2 3 )} 
+wvSelectSignal -win $_nWave1 {( "if_id" 5 )} 
+wvSetCursor -win $_nWave1 36464.854641 -snap {("G6" 0)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSetCursor -win $_nWave1 37949.846800 -snap {("G6" 0)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSetCursor -win $_nWave1 1576.658341 -snap {("G6" 0)}
+wvSelectGroup -win $_nWave1 {G6}
+wvGetSignalOpen -win $_nWave1
+wvSelectGroup -win $_nWave1 {G6}
+wvSelectGroup -win $_nWave1 {G6}
+wvSelectGroup -win $_nWave1 {G6}
+wvGetSignalOpen -win $_nWave1
+wvSetPosition -win $_nWave1 {("id_exe" 9)}
+wvSetPosition -win $_nWave1 {("id_exe" 9)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"p_c" \
+{/top_tb/TOP/cpu/pgc/clk} \
+{/top_tb/TOP/cpu/pgc/rst} \
+{/top_tb/TOP/cpu/pgc/pc_in\[31:0\]} \
+{/top_tb/TOP/cpu/pgc/pc_out\[31:0\]} \
+{/top_tb/TOP/cpu/pgc/pc_write} \
+}
+wvCollapseGroup -win $_nWave1 "p_c"
+wvAddSignal -win $_nWave1 -group {"pc_in_mux" \
+{/top_tb/TOP/cpu/pc_m/branch_ctrl\[1:0\]} \
+{/top_tb/TOP/cpu/pc_m/pc_imm\[31:0\]} \
+{/top_tb/TOP/cpu/pc_m/pc_imm_rs1\[31:0\]} \
+{/top_tb/TOP/cpu/pc_m/pc_in\[31:0\]} \
+{/top_tb/TOP/cpu/pc_m/pc_out\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"instr_m" \
+{/top_tb/TOP/cpu/istr_m/instr\[31:0\]} \
+{/top_tb/TOP/cpu/istr_m/instr_flush} \
+{/top_tb/TOP/cpu/istr_m/instr_out\[31:0\]} \
+}
+wvCollapseGroup -win $_nWave1 "instr_m"
+wvAddSignal -win $_nWave1 -group {"if_id" \
+{/top_tb/TOP/cpu/if_id/id_instr\[31:0\]} \
+{/top_tb/TOP/cpu/if_id/id_pc\[31:0\]} \
+{/top_tb/TOP/cpu/if_id/if_id_reg_write} \
+{/top_tb/TOP/cpu/if_id/if_instr\[31:0\]} \
+{/top_tb/TOP/cpu/if_id/if_pc\[31:0\]} \
+}
+wvCollapseGroup -win $_nWave1 "if_id"
+wvAddSignal -win $_nWave1 -group {"id_exe" \
+{/top_tb/TOP/cpu/id_exe/exe_funct3\[2:0\]} \
+{/top_tb/TOP/cpu/id_exe/exe_funct7\[6:0\]} \
+{/top_tb/TOP/cpu/id_exe/exe_imm\[31:0\]} \
+{/top_tb/TOP/cpu/id_exe/exe_rs1_addr\[4:0\]} \
+{/top_tb/TOP/cpu/id_exe/exe_rs1_data\[31:0\]} \
+{/top_tb/TOP/cpu/id_exe/exe_rs2_addr\[4:0\]} \
+{/top_tb/TOP/cpu/id_exe/exe_rs2_data\[31:0\]} \
+{/top_tb/TOP/cpu/id_exe/exe_rd_addr\[4:0\]} \
+{/top_tb/TOP/cpu/id_exe/exe_pc\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G6" \
+}
+wvSelectSignal -win $_nWave1 {( "id_exe" 9 )} 
+wvSetPosition -win $_nWave1 {("id_exe" 9)}
+wvSetPosition -win $_nWave1 {("id_exe" 9)}
+wvSetPosition -win $_nWave1 {("id_exe" 9)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"p_c" \
+{/top_tb/TOP/cpu/pgc/clk} \
+{/top_tb/TOP/cpu/pgc/rst} \
+{/top_tb/TOP/cpu/pgc/pc_in\[31:0\]} \
+{/top_tb/TOP/cpu/pgc/pc_out\[31:0\]} \
+{/top_tb/TOP/cpu/pgc/pc_write} \
+}
+wvCollapseGroup -win $_nWave1 "p_c"
+wvAddSignal -win $_nWave1 -group {"pc_in_mux" \
+{/top_tb/TOP/cpu/pc_m/branch_ctrl\[1:0\]} \
+{/top_tb/TOP/cpu/pc_m/pc_imm\[31:0\]} \
+{/top_tb/TOP/cpu/pc_m/pc_imm_rs1\[31:0\]} \
+{/top_tb/TOP/cpu/pc_m/pc_in\[31:0\]} \
+{/top_tb/TOP/cpu/pc_m/pc_out\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"instr_m" \
+{/top_tb/TOP/cpu/istr_m/instr\[31:0\]} \
+{/top_tb/TOP/cpu/istr_m/instr_flush} \
+{/top_tb/TOP/cpu/istr_m/instr_out\[31:0\]} \
+}
+wvCollapseGroup -win $_nWave1 "instr_m"
+wvAddSignal -win $_nWave1 -group {"if_id" \
+{/top_tb/TOP/cpu/if_id/id_instr\[31:0\]} \
+{/top_tb/TOP/cpu/if_id/id_pc\[31:0\]} \
+{/top_tb/TOP/cpu/if_id/if_id_reg_write} \
+{/top_tb/TOP/cpu/if_id/if_instr\[31:0\]} \
+{/top_tb/TOP/cpu/if_id/if_pc\[31:0\]} \
+}
+wvCollapseGroup -win $_nWave1 "if_id"
+wvAddSignal -win $_nWave1 -group {"id_exe" \
+{/top_tb/TOP/cpu/id_exe/exe_funct3\[2:0\]} \
+{/top_tb/TOP/cpu/id_exe/exe_funct7\[6:0\]} \
+{/top_tb/TOP/cpu/id_exe/exe_imm\[31:0\]} \
+{/top_tb/TOP/cpu/id_exe/exe_rs1_addr\[4:0\]} \
+{/top_tb/TOP/cpu/id_exe/exe_rs1_data\[31:0\]} \
+{/top_tb/TOP/cpu/id_exe/exe_rs2_addr\[4:0\]} \
+{/top_tb/TOP/cpu/id_exe/exe_rs2_data\[31:0\]} \
+{/top_tb/TOP/cpu/id_exe/exe_rd_addr\[4:0\]} \
+{/top_tb/TOP/cpu/id_exe/exe_pc\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G6" \
+}
+wvSelectSignal -win $_nWave1 {( "id_exe" 9 )} 
+wvSetPosition -win $_nWave1 {("id_exe" 9)}
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "id_exe" 3 )} 
+wvSetPosition -win $_nWave1 {("id_exe" 3)}
+wvSetPosition -win $_nWave1 {("id_exe" 5)}
+wvSetPosition -win $_nWave1 {("id_exe" 6)}
+wvSetPosition -win $_nWave1 {("id_exe" 7)}
+wvSetPosition -win $_nWave1 {("id_exe" 8)}
+wvSetPosition -win $_nWave1 {("id_exe" 9)}
+wvMoveSelected -win $_nWave1
+wvSetPosition -win $_nWave1 {("id_exe" 9)}
+wvSelectGroup -win $_nWave1 {G6}
+wvSetCursor -win $_nWave1 6599.965149 -snap {("G6" 0)}
+wvSetCursor -win $_nWave1 3483.314940 -snap {("id_exe" 7)}
+wvSelectSignal -win $_nWave1 {( "id_exe" 8 )} 
+wvSelectSignal -win $_nWave1 {( "id_exe" 8 9 )} 
+wvSelectSignal -win $_nWave1 {( "pc_in_mux" 2 )} {( "id_exe" 8 9 )} 
+wvSetCursor -win $_nWave1 5463.304484 -snap {("G6" 0)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
