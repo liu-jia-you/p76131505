@@ -2,9 +2,9 @@
 // File created by:  irun
 // Do not modify this file
 //
-+prog_path=/home/liujiayou/p76131505/./sim/prog2
++prog_path=/home/liujiayou/p76131505/./sim/prog3
 +incdir+/home/liujiayou/p76131505/./src+/home/liujiayou/p76131505/./include+/home/liujiayou/p76131505/./sim
-+define+prog2+FSDB_ALL
++define+prog3+FSDB_ALL
 +access+r
 +nc64bit
 -ACCESS

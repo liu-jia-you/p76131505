@@ -20,10 +20,11 @@ int main(){
   extern int mul1;
   extern int mul2;
   extern int _test_start;
+  long long int m1 = mul1;
   long long int m2 = mul2;
-  int fl = 1, f2 = 1;
-  if(mul1 < 0){
-    mul1 = ~mul1 + 1;
+  int f1 = 1, f2 = 1;
+  if(m1 < 0){
+    m1 = ~m1 + 1;
     f1 = 0; 
   }
   if(m2 < 0){
@@ -31,12 +32,12 @@ int main(){
     f2 = 0;
   }
   for(int i = 0; i < 32; i++){
-    if(m2[0] == 1)
-      m2 += mul1;
-    m2 >> 1;
+    if(m2 & 1)
+      m2 += (m1 << 32);
+    m2 = m2 >> 1;
   }
   if(f1 ^ f2)
     m2 = ~m2 + 1;
-  (&_test_start)[0] = m2[31:0];
-  (&_test_start)[0] = m2[63:32];
+  (&_test_start)[0] = (m2 << 32) >> 32;
+  (&_test_start)[1] = m2 >> 32;
 }

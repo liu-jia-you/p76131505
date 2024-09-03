@@ -1,0 +1,120 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : top
+Version: T-2022.03
+Date   : Tue Sep  3 14:09:02 2024
+****************************************
+
+Operating Conditions: WCCOM   Library: fsa0m_a_generic_core_ss1p62v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: cpu/exe_mem/mem_rd_addr_reg_1_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: cpu/pgc/pc_out_reg_31_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  top                enG1000K              fsa0m_a_generic_core_ss1p62v125c
+  cpu                enG30K                fsa0m_a_generic_core_ss1p62v125c
+  forwarding_unit    enG5K                 fsa0m_a_generic_core_ss1p62v125c
+  rs12_to_alu        enG5K                 fsa0m_a_generic_core_ss1p62v125c
+  ALU                enG5K                 fsa0m_a_generic_core_ss1p62v125c
+  ALU_DW01_add_0     enG5K                 fsa0m_a_generic_core_ss1p62v125c
+  pc_in_mux          enG5K                 fsa0m_a_generic_core_ss1p62v125c
+  programcounter     enG5K                 fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  cpu/exe_mem/mem_rd_addr_reg_1_/CK (QDFFRBT)             0.00       1.00 r
+  cpu/exe_mem/mem_rd_addr_reg_1_/Q (QDFFRBT)              0.47       1.47 f
+  cpu/exe_mem/mem_rd_addr[1] (exe_mem)                    0.00       1.47 f
+  cpu/f_u/mem_rd_addr[1] (forwarding_unit)                0.00       1.47 f
+  cpu/f_u/U13/O (XNR2H)                                   0.20       1.66 f
+  cpu/f_u/U19/O (ND3HT)                                   0.14       1.80 r
+  cpu/f_u/U39/O (OR2T)                                    0.19       1.99 r
+  cpu/f_u/U28/O (AN4)                                     0.17       2.16 r
+  cpu/f_u/U27/O (AN4P)                                    0.24       2.40 r
+  cpu/f_u/forward_rs1_src[1] (forwarding_unit)            0.00       2.40 r
+  cpu/rs12/forward_rs1_src[1] (rs12_to_alu)               0.00       2.40 r
+  cpu/rs12/U81/O (INV2)                                   0.04       2.44 f
+  cpu/rs12/U115/O (OR2B1S)                                0.18       2.62 r
+  cpu/rs12/U35/O (INV2)                                   0.12       2.73 f
+  cpu/rs12/U13/O (AO222P)                                 0.48       3.21 f
+  cpu/rs12/alu_rs1_data[1] (rs12_to_alu)                  0.00       3.21 f
+  cpu/alu/alu_rs1_data[1] (ALU)                           0.00       3.21 f
+  cpu/alu/U31/O (BUF3CK)                                  0.15       3.37 f
+  cpu/alu/r386/A[1] (ALU_DW01_add_0)                      0.00       3.37 f
+  cpu/alu/r386/U1_1/CO (FA1)                              0.38       3.75 f
+  cpu/alu/r386/U1_2/CO (FA1)                              0.36       4.10 f
+  cpu/alu/r386/U1_3/CO (FA1)                              0.39       4.49 f
+  cpu/alu/r386/U23/O (ND2)                                0.15       4.65 r
+  cpu/alu/r386/U25/O (ND3P)                               0.11       4.76 f
+  cpu/alu/r386/U1_5/CO (FA1)                              0.39       5.15 f
+  cpu/alu/r386/U3/O (ND2)                                 0.17       5.33 r
+  cpu/alu/r386/U5/O (ND3HT)                               0.15       5.48 f
+  cpu/alu/r386/U16/O (ND2P)                               0.12       5.59 r
+  cpu/alu/r386/U17/O (ND3P)                               0.11       5.71 f
+  cpu/alu/r386/U1_8/CO (FA1)                              0.36       6.06 f
+  cpu/alu/r386/U1_9/CO (FA1)                              0.36       6.42 f
+  cpu/alu/r386/U1_10/CO (FA1)                             0.36       6.78 f
+  cpu/alu/r386/U1_11/CO (FA1)                             0.36       7.14 f
+  cpu/alu/r386/U1_12/CO (FA1)                             0.36       7.50 f
+  cpu/alu/r386/U1_13/CO (FA1)                             0.36       7.86 f
+  cpu/alu/r386/U1_14/CO (FA1)                             0.36       8.22 f
+  cpu/alu/r386/U1_15/CO (FA1)                             0.40       8.62 f
+  cpu/alu/r386/U28/O (ND2)                                0.18       8.80 r
+  cpu/alu/r386/U30/O (ND3HT)                              0.15       8.95 f
+  cpu/alu/r386/U13/O (ND2P)                               0.12       9.07 r
+  cpu/alu/r386/U33/O (ND3P)                               0.11       9.18 f
+  cpu/alu/r386/U1_18/CO (FA1)                             0.36       9.54 f
+  cpu/alu/r386/U1_19/CO (FA1)                             0.36       9.90 f
+  cpu/alu/r386/U1_20/CO (FA1)                             0.36      10.26 f
+  cpu/alu/r386/U1_21/CO (FA1)                             0.36      10.62 f
+  cpu/alu/r386/U1_22/CO (FA1)                             0.36      10.98 f
+  cpu/alu/r386/U1_23/CO (FA1)                             0.36      11.34 f
+  cpu/alu/r386/U1_24/CO (FA1)                             0.36      11.70 f
+  cpu/alu/r386/U1_25/CO (FA1)                             0.36      12.06 f
+  cpu/alu/r386/U1_26/CO (FA1)                             0.36      12.42 f
+  cpu/alu/r386/U1_27/CO (FA1)                             0.36      12.78 f
+  cpu/alu/r386/U1_28/CO (FA1)                             0.44      13.22 f
+  cpu/alu/r386/U11/O (ND2P)                               0.12      13.34 r
+  cpu/alu/r386/U21/O (ND3P)                               0.11      13.45 f
+  cpu/alu/r386/U1_30/CO (FA1)                             0.37      13.82 f
+  cpu/alu/r386/U34/O (XOR2H)                              0.19      14.01 r
+  cpu/alu/r386/SUM[31] (ALU_DW01_add_0)                   0.00      14.01 r
+  cpu/alu/U39/O (AOI22H)                                  0.16      14.17 f
+  cpu/alu/U82/O (ND3HT)                                   0.22      14.39 r
+  cpu/alu/alu_out[31] (ALU)                               0.00      14.39 r
+  cpu/pc_m/pc_imm_rs1[31] (pc_in_mux)                     0.00      14.39 r
+  cpu/pc_m/U5/O (ND2T)                                    0.08      14.46 f
+  cpu/pc_m/U18/O (ND3HT)                                  0.10      14.56 r
+  cpu/pc_m/pc_in[31] (pc_in_mux)                          0.00      14.56 r
+  cpu/pgc/pc_in[31] (programcounter)                      0.00      14.56 r
+  cpu/pgc/U5/O (ND2P)                                     0.07      14.63 f
+  cpu/pgc/U13/O (ND2P)                                    0.09      14.73 r
+  cpu/pgc/pc_out_reg_31_/D (QDFFRBN)                      0.00      14.73 r
+  data arrival time                                                 14.73
+
+  clock clk (rise edge)                                  14.00      14.00
+  clock network delay (ideal)                             1.00      15.00
+  clock uncertainty                                      -0.10      14.90
+  cpu/pgc/pc_out_reg_31_/CK (QDFFRBN)                     0.00      14.90 r
+  library setup time                                     -0.16      14.74
+  data required time                                                14.74
+  --------------------------------------------------------------------------
+  data required time                                                14.74
+  data arrival time                                                -14.73
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+1

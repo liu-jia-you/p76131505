@@ -1,21 +1,23 @@
-// typedef unsigned int UINT;
-// extern UINT div1;
-// extern UINT div2;
-// extern int _test_start;
+int main(void){
 
-// UINT gcd(UINT, UINT);
-// int main(void){
-//     (&_test_start)[0] = gcd(div1,div2);
-//     return 0;
-// }
+    extern int div1;
+    extern int div2;
+    extern int _test_start;
+    int temp;
 
-// UINT gcd(UINT u,UINT v){
-//   UINT r;
-//   while (v != 0){
-//     r = u % v;
-//     u = v;
-//     v = r;
-//   }
-//   return u;
-// }
+    while(div2 != 0){
+        if(div1 < div2){
+            temp = div1;
+            div1 = div2;
+            div2 = temp;
+        }
+        else {
+            temp = div1 - div2;
+            div1 = div2;
+            div2 = temp;
+        }
+    }
+    (&_test_start)[0] = div1;
 
+    return 0;
+}

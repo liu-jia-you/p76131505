@@ -1,17 +1,17 @@
 irun(64): 15.20-s084: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
-TOOL:	irun(64)	15.20-s084: Started on Sep 02, 2024 at 18:53:46 CST
+TOOL:	irun(64)	15.20-s084: Started on Sep 03, 2024 at 13:47:16 CST
 irun
 	/home/liujiayou/p76131505/./sim/top_tb.sv
 	+incdir+/home/liujiayou/p76131505/./src+/home/liujiayou/p76131505/./include+/home/liujiayou/p76131505/./sim
-	+define+prog2+FSDB_ALL
+	+define+prog3+FSDB_ALL
 	-define CYCLE=10.0
 	-define MAX=100000
 	+access+r
 	+nc64bit
-	+prog_path=/home/liujiayou/p76131505/./sim/prog2
+	+prog_path=/home/liujiayou/p76131505/./sim/prog3
 
    User defined plus("+") options:
-	+prog_path=/home/liujiayou/p76131505/./sim/prog2
+	+prog_path=/home/liujiayou/p76131505/./sim/prog3
 
 ncvlog: *W,NOTIND: unable to access -INCDIR /home/liujiayou/p76131505/./include (No such file or directory).
 file: /home/liujiayou/p76131505/./sim/top_tb.sv
@@ -89,8 +89,7 @@ FSDB Dumper for IUS, Release Verdi_Q-2020.03, Linux x86_64/64bit, 02/09/2020
 
 Done
 
-DM[8192] = cfb90b0a, pass
-DM[8193] = f56a8809, pass
+DM[8192] = 00000003, pass
 
 
 
@@ -104,7 +103,7 @@ DM[8193] = f56a8809, pass
         ****************************   \m___m__|_|
 
 
-Simulation complete via $finish(1) at time 387020 NS + 3
+Simulation complete via $finish(1) at time 105130 NS + 3
 ../sim/top_tb.sv:76     $finish;
 ncsim> exit
-TOOL:	irun(64)	15.20-s084: Exiting on Sep 02, 2024 at 18:53:48 CST  (total: 00:00:02)
+TOOL:	irun(64)	15.20-s084: Exiting on Sep 03, 2024 at 13:47:18 CST  (total: 00:00:02)
